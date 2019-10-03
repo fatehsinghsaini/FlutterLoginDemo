@@ -9,7 +9,9 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'mainView/LoginView.dart';
 import 'mainView/ShowListView.dart';
 
-void main() => runApp(ListClass());
+void main() => runApp(
+    ListClass()
+);
 
 class MyApp extends StatelessWidget {
   @override
@@ -180,18 +182,22 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
 }
 
 class ListClass extends StatelessWidget{
+
+
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ListView',
+      title: 'Login',
       theme: ThemeData(
         primarySwatch: Colors.teal
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('ListView'),),
-        body: LoginView(),
+        appBar: AppBar(title: Text('Login'),
+        centerTitle: true,),
+        body:  LoginView(),
       )
       ,
     );
